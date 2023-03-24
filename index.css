@@ -997,73 +997,90 @@ button:focus {
     margin-left: auto;
   }
 }
+/* Styles for screens up to 1600px wide */
+@media (max-width: 1600px) {
+  #bio p {
+    margin-top: 400px
+    .btn_one {
+    padding: 0.6rem 3rem;
+    width: 60%;
+    margin: 6vh auto;
+    background: rgba(200, 184, 138, 0.8);
+    color: #fff;
+}
 
-    @media (max-width: 1600px){
-      #bio p{
-        margin-top: 400px;
-        text-align: justify;
-        margin-left: 0;
-        width: auto;
-      }
-      .buttoncv {
-        --width: auto;
-        --height: 40px;
-        --tooltip-height: 35px;
-        --tooltip-width: 90px;
-        --gap-between-tooltip-to-button: calc(var(--tooltip-height) + 3px);
-        --button-color: #C8B88A;
-        --tooltip-color: #fff;
-        width: var(--width);
-        height: var(--height);
-        background: var(--button-color);
-        position: relative;
-        text-align: center;
-        border-radius: 0.45em;
-        -webkit-transition: background 0.3s;
-        transition: background 0.3s;
-        margin-left: auto;
-       }
-      .imgbio1{
-        position: absolute;
-        width:160px;
-        height: 300px;
-        clip-path: polygon(25% 0%, 95% 0%, 70% 100%, 0% 100%);
-        object-fit: cover;
-        object-position: -45px;
-        margin-left: 18%;
-        margin-top: 50px;
-        -webkit-box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-      }
-      .imgbio2{
-        width:250px;
-        height: 350px;
-        clip-path: polygon(25% 0%, 95% 0%, 70% 100%, 0% 100%);
-        object-fit: cover;
-        object-position: 0px -20px;
-        position: absolute;
-        margin-left: 33%;
-        margin-top: 35px;
-        -webkit-box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-      }
-      .imgbio3{
-        width:160px;
-        height: 300px;
-        clip-path: polygon(25% 0%, 95% 0%, 70% 100%, 0% 100%);
-        object-fit: cover;
-        object-position: -5px;
-        position: absolute;
-        margin-left: 58%;
-        margin-top: 50px;
-        -webkit-box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-      }
-      .imgbio1:hover, .imgbio2:hover, .imgbio3:hover{
-        transform: scale(1.1);
-        transition: transform 330ms ease-in-out;
-        cursor: pointer;
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-      }
-    }
+.btn_one:hover {
+    box-shadow: 0px 10px 40px rgba(200, 184, 138, 0.8);
+    cursor: pointer;
+}
+
+#contact table tr td {
+    width: 100%;
+    display: block;
+}
+
+#inner_table tr td {
+    padding: 1rem 0 !important;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #C8B88A;
+}
+
+#projects h1 {
+    width: 19%;
+}
+
+#bio h1 {
+    width: 25%;
+}
+
+#qualification {
+    margin-top: 2000px;
+}
+
+#qualification h1 {
+    width: 10%;
+}
+
+#contact {
+    margin-top: 3800px;
+}
+
+#contact h1 {
+    width: 33%;
+}
+
+header {
+    padding: 1rem 2vw;
+    font-size: 1rem;
+}
+
+#logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+#logoname {
+    top: 0.5rem;
+    left: 9%;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+#logoname::after {
+    font-size: 2rem;
+}
 }
